@@ -8,4 +8,8 @@ load_dotenv()
 # db_client=MongoClient().local #Si no le pongo nada, por defecto se conecta a LocalHost 
 
 #---BASE DE DATOS REMOTA---
-db_client = MongoClient(os.getenv("MONGO_URI")).test_db
+MONGO_URI = os.getenv("MONGO_URI")
+if not MONGO_URI:
+    raise RuntimeError("Falta la variable de entorno MONGO_URI")
+
+db_client = MongoClient(MONGO_URI).users_db
