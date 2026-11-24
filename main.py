@@ -68,8 +68,8 @@ async def root():
 </head>
 <body>
     <h1>Hola FastAPI... y hola a ti ❤️</h1>
-    <img src="/static/images/nosotros.jpg" alt="Nosotros">
-    <p>Tu mensaje aquí</p>
+    <img src="/static/images/pompompurin.jpg" alt="Nosotros">
+    <p>Mi primer deploy es un pompompurin para tu <3</p>
 </body>
 </html>
 """
